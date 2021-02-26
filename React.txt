@@ -1,0 +1,12 @@
+function Ola(props){
+  let nome= 'mundo';
+  if (props.nome){
+    nome = props.nome;
+  }
+  return <h1> Ola {nome} </h1>;
+}
+
+ReactDOM.render(
+  <Ola nome = "Oi"/>,
+  document.getElementById('conteiner')
+); 
